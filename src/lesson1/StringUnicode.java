@@ -2,6 +2,8 @@ package lesson1;
 
 
 public class StringUnicode {
+
+
     public static void main(String[] args){
         String target = "Java";
         System.out.println("Hello " + target);
@@ -34,5 +36,6 @@ public class StringUnicode {
         System.out.println(unicode.codePointCount(0, unicode.length()));
         System.out.println(unicode.codePointAt(2));
         System.out.println(Character.toChars(unicode.codePointAt(2)));
+
     }
 }

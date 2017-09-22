@@ -2,14 +2,19 @@ package lesson3;
 
 public class ClassBase1 {
     static public void main(String[] arg){
-        Counstructor c = new Counstructor();
+        Constructor c = new Constructor();
         System.out.println(c.getName());
         System.out.println(c.getFriend(0));
-        Counstructor c1 = new Counstructor("kiwan");
+        Constructor c1 = new Constructor("kiwan");
         System.out.println(c1.getName());
         System.out.println(c1.getFriend(0));
-        Counstructor c2 = new Counstructor("kiwan", "maeng");
+        Constructor c2 = new Constructor("kiwan", "maeng");
         System.out.println(c2.getName());
         System.out.println(c2.getFriend(0));
+
+        NoConst no = new NoConst();
+        System.out.println(no.getFirstName(c2));
+
+
     }
 }

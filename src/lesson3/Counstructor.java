@@ -1,9 +1,21 @@
 package lesson3;
 
+import java.util.ArrayList;
+
 public class Counstructor {
 
     private String firstName;
     private String lastName;
+    private String seperator;
+    private ArrayList<String> friends;
+    {
+      seperator = " ";
+    }
+    {
+      friends = new ArrayList<>();
+      friends.add("mike");
+      friends.add("jane");
+    }
 
     public Counstructor(){
         this("john", "doe");
@@ -16,6 +28,9 @@ public class Counstructor {
         lastName = lname;
     }
     public String getName(){
-        return firstName + " " + lastName;
+        return firstName + seperator + lastName;
+    }
+    public String getFriend(int index){
+        return friends.get(index);
     }
 }

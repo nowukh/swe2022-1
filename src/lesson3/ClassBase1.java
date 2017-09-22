@@ -15,6 +15,9 @@ public class ClassBase1 {
         NoConst no = new NoConst();
         System.out.println(no.getFirstName(c2));
 
-
+        System.out.println(Constructor.plus(3, 5));
+        //기본은 클래스이름.정적메소드()
+        System.out.println(c2.plus(5, 5));
+        //인스턴스에서도 정적메소드 호출이 된다
     }
 }
